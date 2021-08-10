@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/estilos.css" />
+
+    <title>Loja Virtual</title>
+  </head>
+  <body style="min-width: 372px">
+    <div class="d-flex flex-column wrapper">
+      <nav
+        class="
+          navbar navbar-expand-lg navbar-dark
+          bg-dark bg-gradient
+          border-bottom
+          shadow-sm
+          mb-3
+        "
+      >
+        <div class="container">
+          <a class="navbar-brand" href="/"><b>Loja Virtual :: Favoritos</b></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target=".navbar-collapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./index.html">Principal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./contato.html">Contato</a>
+              </li>
+            </ul>
+            <div class="align-self-end">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="./cadastro.html" class="nav-link text-white"
+                    >Logado</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="./login.html" class="nav-link text-white">Sair</a>
+                </li>
+                <li class="nav-item">
+                  <span
+                    class="
+                      badge
+                      rounded-pill
+                      bg-light
+                      text-dark
+                      position-absolute
+                      ms-4
+                      mt-0
+                    "
+                    title="5 produto(s) no carrinho"
+                    ><small>5</small></span
+                  >
+                  <a href="./carrinho.html" class="nav-link text-white">
+                    <i
+                      class="bi-cart"
+                      style="font-size: 24px; line-height: 24px"
+                    ></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main class="flex-fill">
+        <div class="container">
+          <h1>Minha Conta</h1>
+          <div class="row gx-3 mb-5">
+            <div class="col-4">
+              <div class="list-group">
+                <a
+                  href="/cliente_dados.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="bi-person fs-6"></i> Dados Pessoais
+                </a>
+                <a
+                  href="/cliente_contatos.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="bi-mailbox fs-6"></i> Contatos
+                </a>
+                <a
+                  href="/cliente_pedidos.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="bi-truck fs-6"></i> Pedidos
+                </a>
+                <a
+                  href="/cliente_endereco.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="bi-house-door fs-6"></i> Endereço
+                </a>
+                <a
+                  href="/cliente_favoritos.html"
+                  class="
+                    list-group-item list-group-item-action
+                    bg-success bg-gradient
+                    text-light
+                  "
+                >
+                  <i class="bi-heart fs-6"></i> Favoritos
+                </a>
+                <a
+                  href="/cliente_senha.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="bi-lock fs-6"></i> Alterar Senha
+                </a>
+                <a
+                  href="/index.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="bi-door-open fs-6"></i> Sair
+                </a>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="row g-3">
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                  <div class="card text-center bg-light">
+                    <a
+                      href="#"
+                      class="position-absolute end-0 p-2 text-danger"
+                      title="Remover dos favoritos"
+                    >
+                      <i
+                        class="bi-x"
+                        style="font-size: 24px; line-height: 24px"
+                      ></i>
+                    </a>
+                    <img src="/img/produtos/004.webp" class="card-img-top" />
+                    <div class="card-header">R$ 4,50</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Mouse sem fio Logitech</h5>
+                      <p class="card-text p.truncar-3l">
+                        MX Ergo com Ajuste de Ângulo
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <a
+                        href="carrinho.html"
+                        class="btn btn-dark bg-gradient mt-2 d-block"
+                      >
+                        Comprar</a
+                      >
+                      <small class="text-success">320,5kg em estoque</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                  <div class="card text-center bg-light">
+                    <a
+                      href="#"
+                      class="position-absolute end-0 p-2 text-danger"
+                      title="Remover dos favoritos"
+                    >
+                      <i
+                        class="bi-x"
+                        style="font-size: 24px; line-height: 24px"
+                      ></i>
+                    </a>
+                    <img src="/img/produtos/011.webp" class="card-img-top" />
+                    <div class="card-header">R$ 4,50</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Caixa de som pulse</h5>
+                      <p class="card-text p.truncar-3l">
+                        mega boombox 440w preta
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <a
+                        href="carrinho.html"
+                        class="btn btn-dark bg-gradient mt-2 d-block"
+                      >
+                        Comprar</a
+                      >
+                      <small class="text-success">320,5kg em estoque</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                  <div class="card text-center bg-light">
+                    <a
+                      href="#"
+                      class="position-absolute end-0 p-2 text-danger"
+                      title="Remover dos favoritos"
+                    >
+                      <i
+                        class="bi-x"
+                        style="font-size: 24px; line-height: 24px"
+                      ></i>
+                    </a>
+                    <img src="/img/produtos/009.webp" class="card-img-top" />
+                    <div class="card-header">R$ 4,50</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Microfone Condensador</h5>
+                      <p class="card-text p.truncar-3l">
+                        USB Blue Snowball Ice Preto
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <a
+                        href="carrinho.html"
+                        class="btn btn-dark bg-gradient mt-2 d-block"
+                      >
+                        Comprar</a
+                      >
+                      <small class="text-success">320,5kg em estoque</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                  <div class="card text-center bg-light">
+                    <a
+                      href="#"
+                      class="position-absolute end-0 p-2 text-danger"
+                      title="Remover dos favoritos"
+                    >
+                      <i
+                        class="bi-x"
+                        style="font-size: 24px; line-height: 24px"
+                      ></i>
+                    </a>
+                    <img src="/img/produtos/010.webp" class="card-img-top" />
+                    <div class="card-header">R$ 4,50</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Notebook Ideapad</h5>
+                      <p class="card-text p.truncar-3l">
+                        S145 Lenovo Core i5 8GB
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <a
+                        href="carrinho.html"
+                        class="btn btn-dark bg-gradient mt-2 d-block"
+                      >
+                        Comprar</a
+                      >
+                      <small class="text-success">320,5kg em estoque</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="border-top text-muted bg-light mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 text-center py-3">
+              &copy; 2021 - Loja Virtual Ltda ME<br />
+              Rua Virtual Inexistente, 171, Codelândia/DV <br />
+              CNPJ 99.999.999/0001-99
+            </div>
+            <div class="col-12 col-md-4 text-center py-3">
+              <a
+                href="/privacidade.html"
+                class="text-decoration-none text-dark"
+              >
+                Política de Privacidade </a
+              ><br />
+              <a href="/termos.html" class="text-decoration-none text-dark">
+                Termos de Uso </a
+              ><br />
+              <a href="/quemsomos.html" class="text-decoration-none text-dark">
+                Quem Somos </a
+              ><br />
+              <a href="/trocas.html" class="text-decoration-none text-dark">
+                Trocas e Devoluções
+              </a>
+            </div>
+            <div class="col-12 col-md-4 text-center py-3">
+              <a href="/contato.html" class="text-decoration-none text-dark">
+                Contato pelo Site </a
+              ><br />
+              E-mail:
+              <a href="/contato.html" class="text-decoration-none text-dark">
+                email@dominio.com </a
+              ><br />
+              Telefone:
+              <a
+                href="/phone:11999990000"
+                class="text-decoration-none text-dark"
+              >
+                (11) 99999-0000
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
